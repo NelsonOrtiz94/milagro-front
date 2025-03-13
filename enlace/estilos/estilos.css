@@ -1,0 +1,551 @@
+body::before {
+  display: block;
+  content: "";
+  height: 10px;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.container .img-nav {
+  width: 10%;
+  height: auto;
+}
+
+.navbar-nav {
+  margin-left: -1%;
+  width: 45%;
+  background-color: dark;
+  color: #fff;
+  padding: -50px 0;
+  margin-right: 20%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  top: 0;
+}
+
+.navbar ul li {
+  margin: 0 1em;
+}
+
+.navbar-social-icons a {
+  margin-right: 20px; /* Agrega un espacio de 10px entre los iconos */
+}
+
+.icon-wp {
+  max-width: 2%;
+  max-height: 2%;
+  color: black;
+}
+
+.icon-fb {
+  max-height: 2%;
+  color: black;
+}
+
+.icon-mail {
+  max-height: 2%;
+  color: black;
+}
+
+.icon-wp:hover {
+  color: rgb(2, 133, 2);
+}
+
+.icon-fb:hover {
+  color: rgb(4, 0, 255);
+}
+
+.icon-mail:hover {
+  color: rgb(255, 0, 0);
+}
+
+/* ESTILOS SECCION PORTADA PRINCIPAL */
+.portada {
+  background-image: url(../img/esoterismo.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ocupa el 100% del alto de la ventana */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: gold;
+  display: flex; /* Utiliza flexbox para distribuir los elementos dentro de la sección */
+  flex-direction: column; /* Apila los elementos verticalmente en pantallas pequeñas */
+  margin-top: 46px; /* Espacio entre el navbar y la sección */
+}
+
+.yellow-box-portada {
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block; /* Hace que el contenedor se ajuste al contenido */
+  text-align: center;
+  color: black;
+}
+
+.yellow-box-subtitulo {
+  background-color: yellow;
+  padding: 15px;
+  height: 50px;
+  border-radius: 10px;
+  display: inline-block; /* Hace que el contenedor se ajuste al contenido */
+  text-align: center;
+}
+
+.text-black-portada {
+  color: black;
+  text-transform: uppercase;
+  /* font-weight: bold; */
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  font-family: sans-serif;
+  font-size: 24px;
+  line-height: 1.3rem;
+  text-align: center;
+}
+
+.text-black-subtitulo {
+  color: black;
+  text-transform: uppercase;
+  /* font-weight: bold; */
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  font-family: sans-serif;
+  font-size: 24px;
+  line-height: 1.3rem;
+  text-align: center;
+}
+
+.contenido-portada {
+  padding: 20px;
+  margin-top: 10px;
+  width: 80%;
+  text-align: center;
+}
+
+.contenido-portada p {
+  /* Estilos para el párrafo dentro del div con clase contenido */
+  /* Por ejemplo: */
+  font-size: 21px;
+  color: rgb(245, 245, 236);
+  background-color: #000;
+}
+
+.texto-portada {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.contenido {
+  padding: 20px;
+}
+
+.contenido p {
+  /* Estilos para el párrafo dentro del div con clase contenido */
+  /* Por ejemplo: */
+  font-size: 21px;
+  color: rgb(245, 245, 236);
+  background-color: #000;
+}
+
+.carousel-item {
+  height: 300px; /* Ajusta la altura según lo necesites */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* O prueba con cover según el efecto deseado */
+  object-position: center;
+  max-height: 500px; /* Evita que la imagen crezca demasiado */
+}
+
+.portada-secundaria {
+  width: 100%;
+  height: 56.5vh;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ESTILOS PORTADA SECUNDARIA */
+.portada-secundaria a {
+  text-align: center; /* Centra la imagen */
+  margin: 0px; /* Añade márgenes alrededor de la sección */
+  background-color: #000;
+  display: flex;
+  width: 100%; /* Ocupa todo el ancho disponible */
+  height: 56.5vh; /* Ocupa toda la altura de la ventana */
+}
+
+.imagen-portada {
+  width: 50%; /* Ajusta el ancho al contenedor */
+  max-width: 1000px; /* Establece un ancho máximo basado en el diseño */
+  height: 100%; /* Mantiene la proporción de la imagen */
+  display: block; /* Asegura que la imagen sea un bloque y centrada si se usa margin auto */
+  margin-left: auto; /* Centra horizontalmente la imagen */
+  margin-right: auto; /* Centra horizontalmente la imagen */
+  object-fit: cover;
+}
+
+/* .portada-secundaria img {
+  width: 100%;
+  height: auto;
+} */
+
+/* ESTILO SECCION SERVICIOS */
+.btn-contacto {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 100px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.btn-contacto:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.btn-contacto-1:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.titulo-s1 {
+  color: red;
+  font-size: 40px;
+}
+
+.p-s1 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.titulo-s2 {
+  color: rgb(150, 47, 247);
+  font-size: 40px;
+}
+
+.p-s2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.titulo-s3 {
+  color: red;
+  font-size: 40px;
+}
+
+.p-s3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.titulo-s4 {
+  color: rgb(150, 47, 247);
+  font-size: 40px;
+}
+
+.p-s4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.servicio {
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  color: white;
+  position: relative;
+}
+
+/* ESTILOS SECCION PREGUNTAS FRECUENTES */
+.pregunta {
+  padding: 5%;
+  /* background-color: rgb(35, 39, 43); Color completamente opaco */
+}
+
+.titulo-pregunta {
+  background-color: yellow;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block; /* Hace que el contenedor se ajuste al contenido */
+  text-align: center;
+  color: black;
+  margin: 20px 0 20px 26%; /* Desplaza el contenedor hacia la derecha */
+  max-width: 80%; /* Limita el ancho máximo del contenedor */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+.subtitulo-pregunta {
+  color: #dee2e6;
+  margin-left: 20%;
+  margin-top: 15px;
+  text-align: center;
+  margin: 10px 0 20px 8%;
+  max-width: 80%;
+  font-size: 150%;
+}
+
+.subtitulo-pregunta a {
+  color: #dee2e6;
+  margin-left: 1%;
+  text-align: center;
+}
+
+.subtitulo-pregunta a:hover {
+  color: yellow; /* Cambia el color al pasar el cursor por encima */
+}
+
+.accordion {
+  margin-top: 5%;
+}
+
+.accordion-button {
+  font-weight: bold;
+}
+
+.lista-pagos {
+  margin-top: 20px; /* Ajusta el valor según tu preferencia */
+}
+
+
+/* ESTILOS SECCION TESTIMONIOS */
+.testimonio {
+  padding: 7%;
+  /* background-color: rgb(35, 39, 43); Color completamente opaco */
+}
+
+.estrellas{
+  color: gold;
+}
+
+/* Estilos para la sección de contacto */
+#contacto {
+  background-color: #f8f9fa; /* Color de fondo */
+  padding-top: 50px; /* Espacio en la parte superior */
+  padding-bottom: 50px; /* Espacio en la parte inferior */
+}
+
+#contacto .container {
+  max-width: 1200px; /* Ancho máximo del contenedor */
+}
+
+#contacto .row {
+  margin-left: -15px; /* Eliminar el espacio en el borde izquierdo */
+  margin-right: -15px; /* Eliminar el espacio en el borde derecho */
+}
+
+#contacto .col-md {
+  padding-left: 15px; /* Espaciado interno en las columnas */
+  padding-right: 15px; /* Espaciado interno en las columnas */
+}
+
+/* Estilos para la lista de información de contacto */
+#contacto .list-group-item {
+  border-color: #dee2e6; /* Color del borde */
+}
+
+/* Estilos para la imagen a la derecha */
+#contacto img {
+  max-width: 100%; /* Imagen responsive */
+  height: auto; /* Altura automática */
+}
+
+
+/* ESTILOS PARA EL FOOTER */
+.redes-sociales a {
+  margin-right: 40px; /* Agrega un espacio de 10px entre los iconos */
+}
+
+.lead{
+  margin-right: 4%;
+}
+
+.estrellas {
+  font-size: 24px; /* Tamaño de las estrellas */
+  color: #ffc107; /* Color de las estrellas */
+  display: inline-block;
+  position: relative;
+}
+
+.bi-star-half {
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  width: 50%; /* Ajusta el ancho de la mitad de la estrella */
+  color: #000; /* Color de fondo para simular la mitad llena */
+}
+
+.h-8 {
+  margin-left: -8%;
+}
+
+/* Estilos para el cuadro amarillo */
+.yellow-box {
+  background-color: yellow;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.text-black {
+  color: black;
+  text-transform: uppercase;
+  /* font-weight: bold; */
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  font-family: sans-serif;
+}
+
+.imagen-responsive {
+  max-width: 100%; /* Asegura que la imagen no se extienda más allá de su contenedor */
+  height: auto; /* Ajusta la altura automáticamente para mantener la relación de aspecto */
+}
+
+@media (min-width: 768px) {
+  .portada {
+    flex-direction: row; /* Cambia la dirección a horizontal en pantallas más grandes */
+  }
+
+  .contenido {
+    flex: 1; /* Hace que el contenido ocupe el espacio restante */
+  }
+
+  .contenedor-imagen {
+    order: 1; /* Cambia el orden de visualización de la imagen a la derecha */
+  }
+}
+
+/* Media query para hacer el texto más pequeño en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .text-black-portada {
+    font-size: 20px;
+  }
+}
+
+/* Media query para hacer el texto más pequeño en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .text-black-subtitulo {
+    font-size: 20px;
+  }
+}
+
+/* Media query para ajustar el tamaño de la imagen en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .logo-responsive {
+    width: 40px; /* Ajusta el tamaño en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-responsive {
+    width: 30px; /* Ajusta el tamaño en pantallas aún más pequeñas */
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo-pregunta {
+    max-width: 90%; /* Ajusta el ancho máximo en pantallas más pequeñas */
+    padding: 15px; /* Ajusta el padding en pantallas más pequeñas */
+    margin-left: 24%; /* Ajusta el margen izquierdo en pantallas más pequeñas */
+  }
+  .subtitulo-pregunta {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 769px) {
+  .titulo-pregunta {
+    max-width: 90%; /* Ajusta el ancho máximo en pantallas más pequeñas */
+    padding: 15px; /* Ajusta el padding en pantallas más pequeñas */
+    margin-left: 24%; /* Ajusta el margen izquierdo en pantallas más pequeñas */
+  }
+  .subtitulo-pregunta {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 750px) {
+  .titulo-pregunta {
+    max-width: 90%; /* Ajusta el ancho máximo en pantallas más pequeñas */
+    padding: 15px; /* Ajusta el padding en pantallas más pequeñas */
+    margin-left: 10%; /* Ajusta el margen izquierdo en pantallas más pequeñas */
+  }
+  .subtitulo-pregunta {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-pregunta {
+    max-width: 100%; /* Ajusta el ancho máximo en pantallas muy pequeñas */
+    padding: 10px; /* Ajusta el padding en pantallas muy pequeñas */
+    margin-left: 10%; /* Ajusta el margen izquierdo en pantallas muy pequeñas */
+  }
+}
+
+@media (max-width: 532px) {
+  .titulo-pregunta {
+    max-width: 100%; /* Ajusta el ancho máximo en pantallas muy pequeñas */
+    padding: 10px; /* Ajusta el padding en pantallas muy pequeñas */
+    margin-left: 10%; /* Ajusta el margen izquierdo en pantallas muy pequeñas */
+  }
+}
+
+@media (max-width: 768px) {
+  .portada-secundaria a{
+    flex-direction: column;
+    height: auto; /* Permite que la altura se ajuste al contenido */
+  }
+
+  .imagen-portada {
+    width: 100%;
+    height: 50vh; /* Cada imagen ocupa la mitad de la altura del contenedor */
+  }
+
+  @media (max-width: 768px) {
+    .container .img-nav {
+      width: 30%;
+    }
+  
+    .navbar-nav {
+      width: 100%;
+      margin: 0;
+      padding: 10px 0;
+      text-align: center;
+    }
+  
+    .portada {
+      height: auto;
+      padding: 50px 20px;
+    }
+  
+    .contenido-portada {
+      width: 100%;
+    }
+  
+    .titulo-pregunta, 
+    .subtitulo-pregunta {
+      margin: 0 auto;
+      width: 90%;
+    }
+  
+    .imagen-portada {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+}
