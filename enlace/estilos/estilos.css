@@ -321,14 +321,13 @@ html {
   margin-top: 20px; /* Ajusta el valor según tu preferencia */
 }
 
-
 /* ESTILOS SECCION TESTIMONIOS */
 .testimonio {
   padding: 7%;
   /* background-color: rgb(35, 39, 43); Color completamente opaco */
 }
 
-.estrellas{
+.estrellas {
   color: gold;
 }
 
@@ -364,13 +363,12 @@ html {
   height: auto; /* Altura automática */
 }
 
-
 /* ESTILOS PARA EL FOOTER */
 .redes-sociales a {
   margin-right: 40px; /* Agrega un espacio de 10px entre los iconos */
 }
 
-.lead{
+.lead {
   margin-right: 4%;
 }
 
@@ -418,34 +416,84 @@ html {
   .portada {
     flex-direction: row; /* Cambia la dirección a horizontal en pantallas más grandes */
   }
-
   .contenido {
     flex: 1; /* Hace que el contenido ocupe el espacio restante */
   }
-
   .contenedor-imagen {
     order: 1; /* Cambia el orden de visualización de la imagen a la derecha */
   }
 }
 
-/* Media query para hacer el texto más pequeño en pantallas más pequeñas */
 @media (max-width: 768px) {
-  .text-black-portada {
-    font-size: 20px;
-  }
-}
-
-/* Media query para hacer el texto más pequeño en pantallas más pequeñas */
-@media (max-width: 768px) {
+  .text-black-portada,
   .text-black-subtitulo {
     font-size: 20px;
   }
-}
 
-/* Media query para ajustar el tamaño de la imagen en pantallas más pequeñas */
-@media (max-width: 768px) {
   .logo-responsive {
     width: 40px; /* Ajusta el tamaño en pantallas más pequeñas */
+  }
+
+  .titulo-pregunta,
+  .subtitulo-pregunta {
+    max-width: 90%;
+    padding: 15px;
+    margin-left: 24%;
+  }
+
+  .portada-secundaria a {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .imagen-portada {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .container .img-nav {
+    width: 30%;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .portada {
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .contenido-portada {
+    width: 100%;
+  }
+
+  .titulo-pregunta,
+  .subtitulo-pregunta {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .imagen-portada {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 750px) {
+  .titulo-pregunta {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 532px) {
+  .titulo-pregunta {
+    max-width: 100%;
+    padding: 10px;
+    margin-left: 10%;
   }
 }
 
@@ -453,99 +501,9 @@ html {
   .logo-responsive {
     width: 30px; /* Ajusta el tamaño en pantallas aún más pequeñas */
   }
-}
-
-@media (max-width: 768px) {
   .titulo-pregunta {
-    max-width: 90%; /* Ajusta el ancho máximo en pantallas más pequeñas */
-    padding: 15px; /* Ajusta el padding en pantallas más pequeñas */
-    margin-left: 24%; /* Ajusta el margen izquierdo en pantallas más pequeñas */
+    max-width: 100%;
+    padding: 10px;
+    margin-left: 10%;
   }
-  .subtitulo-pregunta {
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 769px) {
-  .titulo-pregunta {
-    max-width: 90%; /* Ajusta el ancho máximo en pantallas más pequeñas */
-    padding: 15px; /* Ajusta el padding en pantallas más pequeñas */
-    margin-left: 24%; /* Ajusta el margen izquierdo en pantallas más pequeñas */
-  }
-  .subtitulo-pregunta {
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 750px) {
-  .titulo-pregunta {
-    max-width: 90%; /* Ajusta el ancho máximo en pantallas más pequeñas */
-    padding: 15px; /* Ajusta el padding en pantallas más pequeñas */
-    margin-left: 10%; /* Ajusta el margen izquierdo en pantallas más pequeñas */
-  }
-  .subtitulo-pregunta {
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  .titulo-pregunta {
-    max-width: 100%; /* Ajusta el ancho máximo en pantallas muy pequeñas */
-    padding: 10px; /* Ajusta el padding en pantallas muy pequeñas */
-    margin-left: 10%; /* Ajusta el margen izquierdo en pantallas muy pequeñas */
-  }
-}
-
-@media (max-width: 532px) {
-  .titulo-pregunta {
-    max-width: 100%; /* Ajusta el ancho máximo en pantallas muy pequeñas */
-    padding: 10px; /* Ajusta el padding en pantallas muy pequeñas */
-    margin-left: 10%; /* Ajusta el margen izquierdo en pantallas muy pequeñas */
-  }
-}
-
-@media (max-width: 768px) {
-  .portada-secundaria a{
-    flex-direction: column;
-    height: auto; /* Permite que la altura se ajuste al contenido */
-  }
-
-  .imagen-portada {
-    width: 100%;
-    height: 50vh; /* Cada imagen ocupa la mitad de la altura del contenedor */
-  }
-
-  @media (max-width: 768px) {
-    .container .img-nav {
-      width: 30%;
-    }
-  
-    .navbar-nav {
-      width: 100%;
-      margin: 0;
-      padding: 10px 0;
-      text-align: center;
-    }
-  
-    .portada {
-      height: auto;
-      padding: 50px 20px;
-    }
-  
-    .contenido-portada {
-      width: 100%;
-    }
-  
-    .titulo-pregunta, 
-    .subtitulo-pregunta {
-      margin: 0 auto;
-      width: 90%;
-    }
-  
-    .imagen-portada {
-      width: 100%;
-      height: auto;
-    }
-  }
-  
 }

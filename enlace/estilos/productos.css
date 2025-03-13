@@ -18,7 +18,7 @@ body, html {
 .navbar-nav {
   margin-left: -1%;
   width: 45%;
-  background-color: #333; /* Cambié "dark" por un color real */
+  background-color: #ffff; /* Cambié "dark" por un color real */
   color: #fff;
   padding: 10px 0;
   margin-right: 20%;
@@ -119,6 +119,11 @@ body, html {
   width: 80px;
   height: auto;
   margin-bottom: 10px;
+}
+
+.imagen-responsive {
+  max-width: 100%; /* Asegura que la imagen no se extienda más allá de su contenedor */
+  height: auto; /* Ajusta la altura automáticamente para mantener la relación de aspecto */
 }
 
 /* FOOTER */
