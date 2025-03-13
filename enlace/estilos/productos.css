@@ -4,7 +4,8 @@ body::before {
   height: 10px;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
 }
@@ -42,7 +43,9 @@ body, html {
   margin-right: 10px;
 }
 
-.icon-wp, .icon-fb, .icon-mail {
+.icon-wp,
+.icon-fb,
+.icon-mail {
   width: 24px;
   height: 24px;
   color: black;
@@ -62,7 +65,7 @@ body, html {
 
 /* PORTADA AMARRES */
 .portada-amarres {
-  background-image: url('../img/portada-prod.jpg');
+  background-image: url("../img/portada-prod.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -154,6 +157,24 @@ body, html {
   margin-left: -8%;
 }
 
+/* BOTON CONTACTO */
+.btn-contacto {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 100px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.btn-contacto:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
   .navbar-nav {
@@ -170,7 +191,9 @@ body, html {
     margin: 10px 0;
   }
 
-  .icon-wp, .icon-fb, .icon-mail {
+  .icon-wp,
+  .icon-fb,
+  .icon-mail {
     width: 30px;
     height: 30px;
   }
@@ -201,7 +224,9 @@ body, html {
     font-size: 1em;
   }
 
-  .icon-wp, .icon-fb, .icon-mail {
+  .icon-wp,
+  .icon-fb,
+  .icon-mail {
     width: 28px;
     height: 28px;
   }
