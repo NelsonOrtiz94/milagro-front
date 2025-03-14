@@ -1,18 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var swiper = new Swiper(".mySwiper", {
-      loop: true,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
+  const images = document.querySelectorAll(".testimonio img");
+
+  // Lista de imágenes de respaldo en orden (hombre, mujer, hombre, mujer)
+  const fallbackImages = ["img/default-male.jpg", "img/default-female.jpg", "img/default-male.jpg", "img/default-female.jpg"];
+
+  images.forEach((img, index) => {
+      img.onerror = function () {
+          this.onerror = null; // Evita el bucle infinito
+          this.src = fallbackImages[index]; // Asigna la imagen correspondiente
+      };
   });
-  
+});
