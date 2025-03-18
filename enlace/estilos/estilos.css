@@ -15,41 +15,41 @@ html {
   height: auto;
 }
 
+/* NAVBAR */
 .navbar-nav {
   margin-left: -1%;
   width: 45%;
-  background-color: dark;
+  background-color: #ffff; /* Cambié "dark" por un color real */
   color: #fff;
-  padding: -50px 0;
+  padding: 10px 0;
   margin-right: 20%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+  padding: 0;
 }
 
 .navbar ul li {
   margin: 0 1em;
+  list-style: none;
 }
 
+/* ICONOS */
 .navbar-social-icons a {
-  margin-right: 20px; /* Agrega un espacio de 10px entre los iconos */
+  margin-right: 10px;
 }
 
-.icon-wp {
-  max-width: 2%;
-  max-height: 2%;
-  color: black;
-}
-
-.icon-fb {
-  max-height: 2%;
-  color: black;
-}
-
+.icon-wp,
+.icon-fb,
 .icon-mail {
-  max-height: 2%;
+  width: 24px;
+  height: 24px;
   color: black;
+  
 }
 
 .icon-wp:hover {
@@ -63,6 +63,7 @@ html {
 .icon-mail:hover {
   color: rgb(255, 0, 0);
 }
+
 
 /* ESTILOS SECCION PORTADA PRINCIPAL */
 .portada {
