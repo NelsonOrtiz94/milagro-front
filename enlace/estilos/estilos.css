@@ -2,6 +2,18 @@
   scroll-margin-top: 80px; /* Ajusta según la altura de tu navbar */
 }
 
+#preguntas {
+  scroll-margin-top: 60px; /* Ajusta según la altura de tu navbar */
+}
+
+#testimonios {
+  scroll-margin-top: 50px; /* Ajusta según la altura de tu navbar */
+}
+
+#contacto {
+  scroll-margin-top: 50px; /* Ajusta según la altura de tu navbar */
+}
+
 body::before {
   display: block;
   content: "";
@@ -53,7 +65,6 @@ html {
   width: 24px;
   height: 24px;
   color: black;
-  
 }
 
 .icon-wp:hover {
@@ -67,7 +78,6 @@ html {
 .icon-mail:hover {
   color: rgb(255, 0, 0);
 }
-
 
 /* ESTILOS SECCIÓN PORTADA PRINCIPAL */
 .portada {
@@ -91,7 +101,8 @@ html {
   text-align: center;
 }
 
-.yellow-box-portada, .yellow-box-subtitulo {
+.yellow-box-portada,
+.yellow-box-subtitulo {
   background-color: yellow;
   padding: 10px;
   border-radius: 10px;
@@ -102,7 +113,8 @@ html {
   margin-bottom: 10px;
 }
 
-.text-black-portada, .text-black-subtitulo {
+.text-black-portada,
+.text-black-subtitulo {
   color: black;
   text-transform: uppercase;
   font-family: sans-serif;
@@ -133,12 +145,14 @@ html {
     padding: 40px 20px;
   }
 
-  .yellow-box-portada, .yellow-box-subtitulo {
+  .yellow-box-portada,
+  .yellow-box-subtitulo {
     font-size: 1.2rem;
     padding: 8px;
   }
 
-  .text-black-portada, .text-black-subtitulo {
+  .text-black-portada,
+  .text-black-subtitulo {
     font-size: 1.2rem;
   }
 
@@ -156,7 +170,6 @@ html {
   align-items: center;
   justify-content: center;
 }
-
 
 .portada-secundaria a {
   text-align: center; /* Centra la imagen */
@@ -180,7 +193,7 @@ html {
 /* ESTILO SECCION SERVICIOS */
 .btn-contacto {
   display: inline-block;
-  padding: clamp(8px, 2vw, 12px) clamp(20px, 5vw, 40px); 
+  padding: clamp(8px, 2vw, 12px) clamp(20px, 5vw, 40px);
   background-color: black;
   color: white;
   text-decoration: none;
@@ -235,147 +248,230 @@ html {
   }
 }
 
-
-/* ESTILOS SECCION PREGUNTAS FRECUENTES */
+/* SECCION PREGUNTAS */
 .pregunta {
   padding: 5%;
-  /* background-color: rgb(35, 39, 43); Color completamente opaco */
 }
 
 .titulo-pregunta {
   background-color: yellow;
   padding: 20px;
   border-radius: 10px;
-  display: inline-block; /* Hace que el contenedor se ajuste al contenido */
+  display: block; /* Para que ocupe todo el ancho disponible */
   text-align: center;
   color: black;
-  margin: 20px 0 20px 26%; /* Desplaza el contenedor hacia la derecha */
-  max-width: 80%; /* Limita el ancho máximo del contenedor */
-  box-sizing: border-box; /* Incluye el padding en el ancho total */
+  margin: 0 auto; /* Centrado automático */
+  max-width: 600px; /* Limita el ancho máximo */
+  width: fit-content; /* Ajusta el ancho al contenido */
+  box-sizing: border-box;
 }
 
 .subtitulo-pregunta {
   color: #dee2e6;
-  margin-left: 20%;
-  margin-top: 15px;
   text-align: center;
-  margin: 10px 0 20px 8%;
-  max-width: 80%;
-  font-size: 150%;
+  margin: 10px auto;
+  max-width: 600px;
+  font-size: clamp(1rem, 2.5vw, 1.5rem); /* Se adapta a distintos tamaños */
 }
 
 .subtitulo-pregunta a {
   color: #dee2e6;
-  margin-left: 1%;
-  text-align: center;
+  /* text-decoration: none; */
 }
 
 .subtitulo-pregunta a:hover {
-  color: yellow; /* Cambia el color al pasar el cursor por encima */
+  color: yellow;
 }
 
 .accordion {
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
-.accordion-button {
-  font-weight: bold;
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .pregunta {
+    padding: 3%;
+  }
+
+  .titulo-pregunta {
+    font-size: 1.2rem;
+  }
+
+  .subtitulo-pregunta {
+    font-size: 1rem;
+  }
+
+  .accordion {
+    margin-top: 2%;
+  }
 }
 
-.lista-pagos {
-  margin-top: 20px; /* Ajusta el valor según tu preferencia */
-}
-
-/* ESTILOS SECCION TESTIMONIOS */
+/* SECCION TESTIMONIOS */
 .testimonio {
-  padding: 7%;
-  /* background-color: rgb(35, 39, 43); Color completamente opaco */
+  padding: 60px 0;
+  background-color: #212529; /* Color oscuro de fondo */
 }
 
+.testimonio h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffc107; /* Amarillo */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.testimonio p.lead {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Ajuste para las tarjetas de testimonio */
+.testimonio .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.testimonio .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%; /* Hace que todas tengan la misma altura */
+}
+
+.testimonio .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.testimonio .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra todo el contenido */
+  text-align: center; /* Asegura que el texto esté centrado */
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.testimonio img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 15px; /* Centra la imagen */
+  display: block;
+}
+
+/* Estilos para las estrellas */
 .estrellas {
-  color: gold;
+  color: #ffc107; /* Color dorado */
+  font-size: 1.2rem;
+  margin-top: auto;
 }
 
-/* Estilos para la sección de contacto */
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .testimonio .card {
+    margin-bottom: 20px;
+  }
+
+  .testimonio h2 {
+    font-size: 1.8rem;
+  }
+
+  .testimonio p.lead {
+    font-size: 1rem;
+  }
+}
+
+/* SECCION CONTACTO  */
 #contacto {
-  background-color: #f8f9fa; /* Color de fondo */
-  padding-top: 50px; /* Espacio en la parte superior */
-  padding-bottom: 50px; /* Espacio en la parte inferior */
+  background-color: #f8f9fa; /* Fondo suave */
+  padding: 50px 0; /* Espaciado uniforme */
 }
 
 #contacto .container {
-  max-width: 1200px; /* Ancho máximo del contenedor */
+  max-width: 1200px;
 }
 
-#contacto .row {
-  margin-left: -15px; /* Eliminar el espacio en el borde izquierdo */
-  margin-right: -15px; /* Eliminar el espacio en el borde derecho */
-}
-
-#contacto .col-md {
-  padding-left: 15px; /* Espaciado interno en las columnas */
-  padding-right: 15px; /* Espaciado interno en las columnas */
-}
-
-/* Estilos para la lista de información de contacto */
 #contacto .list-group-item {
-  border-color: #dee2e6; /* Color del borde */
+  border-color: transparent; /* Quita los bordes de los elementos */
+  font-size: 1.1rem;
 }
 
-/* Estilos para la imagen a la derecha */
 #contacto img {
-  max-width: 100%; /* Imagen responsive */
-  height: auto; /* Altura automática */
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-/* ESTILOS PARA EL FOOTER */
+/* Media Query para centrar contenido en pantallas pequeñas */
+@media (max-width: 768px) {
+  #contacto .row {
+    text-align: center;
+  }
+
+  #contacto .col-md-6 {
+    flex-direction: column;
+  }
+
+  #contacto img {
+    margin-top: 20px;
+  }
+}
+
+/* SECCION FOOTER */
+footer {
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Estilos de los iconos de redes sociales */
 .redes-sociales a {
-  margin-right: 40px; /* Agrega un espacio de 10px entre los iconos */
+  font-size: 24px; /* Tamaño de los iconos */
+  color: #333; /* Color de los iconos */
+  transition: 0.3s ease-in-out;
 }
 
-.lead {
-  margin-right: 4%;
+.redes-sociales a:hover {
+  color: #007bff; /* Color al pasar el cursor */
 }
 
-.estrellas {
-  font-size: 24px; /* Tamaño de las estrellas */
-  color: #ffc107; /* Color de las estrellas */
-  display: inline-block;
-  position: relative;
+/* Flecha para volver arriba */
+footer .bi-arrow-up-circle {
+  font-size: 40px;
+  color: #007bff;
+  transition: 0.3s ease-in-out;
 }
 
-.bi-star-half {
-  position: absolute;
-  left: 0;
-  overflow: hidden;
-  width: 50%; /* Ajusta el ancho de la mitad de la estrella */
-  color: #000; /* Color de fondo para simular la mitad llena */
+footer .bi-arrow-up-circle:hover {
+  color: #0056b3; /* Color más oscuro al pasar el cursor */
 }
 
-.h-8 {
-  margin-left: -8%;
+/* Ajustes para dispositivos pequeños */
+@media (max-width: 768px) {
+  .redes-sociales {
+    gap: 20px; /* Más espacio entre iconos */
+  }
+
+  footer .bi-arrow-up-circle {
+    font-size: 35px;
+  }
 }
 
-/* Estilos para el cuadro amarillo */
-.yellow-box {
-  background-color: yellow;
-  padding: 10px;
-  border: 2px solid black;
-  border-radius: 10px;
-}
 
-.text-black {
-  color: black;
-  text-transform: uppercase;
-  /* font-weight: bold; */
-  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-  font-family: sans-serif;
-}
-
-.imagen-responsive {
-  max-width: 100%; /* Asegura que la imagen no se extienda más allá de su contenedor */
-  height: auto; /* Ajusta la altura automáticamente para mantener la relación de aspecto */
-}
+/* MEDIAS QUERIES A REVISION  */
 
 @media (min-width: 768px) {
   .portada {

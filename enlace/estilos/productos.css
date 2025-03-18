@@ -175,6 +175,47 @@ html {
   color: white;
 }
 
+/* SECCION FOOTER */
+footer {
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Estilos de los iconos de redes sociales */
+.redes-sociales a {
+  font-size: 24px; /* Tamaño de los iconos */
+  color: #333; /* Color de los iconos */
+  transition: 0.3s ease-in-out;
+}
+
+.redes-sociales a:hover {
+  color: #007bff; /* Color al pasar el cursor */
+}
+
+/* Flecha para volver arriba */
+footer .bi-arrow-up-circle {
+  font-size: 40px;
+  color: #007bff;
+  transition: 0.3s ease-in-out;
+}
+
+footer .bi-arrow-up-circle:hover {
+  color: #0056b3; /* Color más oscuro al pasar el cursor */
+}
+
+/* Ajustes para dispositivos pequeños */
+@media (max-width: 768px) {
+  .redes-sociales {
+    gap: 20px; /* Más espacio entre iconos */
+  }
+
+  footer .bi-arrow-up-circle {
+    font-size: 35px;
+  }
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
   .navbar-nav {
