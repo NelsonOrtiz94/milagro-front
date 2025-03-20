@@ -196,12 +196,12 @@ html {
 
 /* ESTILO SECCION SERVICIOS */
 
-.titulo-s3{
+.titulo-s3 {
   color: #ff0000;
 }
 .servicio-banner {
   position: relative;
-  background: url('../img/nn.jpg') no-repeat center center/cover;
+  background: url("../img/nn.jpg") no-repeat center center/cover;
   height: 400px;
   display: flex;
   align-items: center;
@@ -244,14 +244,14 @@ html {
 
 @media (max-width: 768px) {
   .servicio-banner {
-      height: auto;
-      padding: 60px 20px;
+    height: auto;
+    padding: 60px 20px;
   }
   .titulo-s3 {
-      font-size: 24px;
+    font-size: 24px;
   }
   .p-s3 {
-      font-size: 16px;
+    font-size: 16px;
   }
 }
 
@@ -261,20 +261,24 @@ html {
 }
 
 .titulo-pregunta {
-  background-color: yellow;
-  padding: 20px;
+  background-color: #ffd700;
+  padding: 15px;
   border-radius: 10px;
-  display: block; /* Para que ocupe todo el ancho disponible */
   text-align: center;
   color: black;
-  margin: 0 auto; /* Centrado automático */
-  max-width: 600px; /* Limita el ancho máximo */
-  width: fit-content; /* Ajusta el ancho al contenido */
+  font-weight: bold;
+  margin: 0 auto;
+  max-width: 600px;
+  width: fit-content;
   box-sizing: border-box;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
 }
 
 .subtitulo-pregunta {
-  color: #dee2e6;
+  color: #ffd700; /* Dorado */
+  font-weight: bold;
+  text-decoration: underline;
   text-align: center;
   margin: 10px auto;
   max-width: 600px;
@@ -294,18 +298,35 @@ html {
   margin-top: 3%;
 }
 
+.accordion-collapse {
+  transition: height 0.3s ease-in-out;
+}
+
+
+.accordion-button {
+  background-color: #343a40;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #FFD700; /* Bordes dorados */
+}
+.accordion-button:not(.collapsed) {
+  background-color: #FFD700;
+  color: black;
+}
+
+
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
   .pregunta {
-    padding: 3%;
+    padding: 2%;
   }
 
   .titulo-pregunta {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .subtitulo-pregunta {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .accordion {
@@ -476,7 +497,6 @@ footer .bi-arrow-up-circle:hover {
     font-size: 35px;
   }
 }
-
 
 /* MEDIAS QUERIES A REVISION  */
 
