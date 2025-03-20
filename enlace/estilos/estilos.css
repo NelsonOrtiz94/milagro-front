@@ -85,7 +85,7 @@ html {
 
 /* ESTILOS SECCIÓN PORTADA PRINCIPAL */
 .portada {
-  background-image: url(../img/esoterismo.jpg);
+  background-image: url(../img/portada-prod.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh; /* Ocupa el 100% del alto de la ventana */
@@ -195,13 +195,12 @@ html {
 }
 
 /* ESTILO SECCION SERVICIOS */
-
 .titulo-s3 {
   color: #ff0000;
 }
+
 .servicio-banner {
   position: relative;
-  background: url("../img/nn.jpg") no-repeat center center/cover;
   height: 400px;
   display: flex;
   align-items: center;
@@ -209,6 +208,29 @@ html {
   text-align: center;
   padding: 40px 20px;
   color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Agregamos las imágenes específicas para cada servicio */
+#servicios {
+  background-image: url("../img/esoterismo.jpg");
+}
+
+#servicio1 {
+  background-image: url("../img/nn.jpg");
+}
+
+#servicio4 {
+  background-image: url("../img/amulet-713355_1280.jpg");
+}
+
+#servicio2 {
+  background-image: url("../img/tiendas-de-brujas-1024x683.jpg");
+}
+
+#servicio3 {
+  background-image: url("../img/pentagram-2680962_1280.jpg");
 }
 
 .overlay {
@@ -244,14 +266,16 @@ html {
 
 @media (max-width: 768px) {
   .servicio-banner {
-    height: auto;
-    padding: 60px 20px;
+      height: auto;
+      padding: 60px 20px;
   }
+
   .titulo-s3 {
-    font-size: 24px;
+      font-size: 24px;
   }
+
   .p-s3 {
-    font-size: 16px;
+      font-size: 16px;
   }
 }
 
@@ -302,13 +326,19 @@ html {
   transition: height 0.3s ease-in-out;
 }
 
-
 .accordion-button {
   background-color: #343a40 !important;
   color: white !important;
   font-weight: bold;
   border: 1px solid #007bff !important; /* Bordes dorados */
 }
+
+.accordion-button::after {
+  background-color: transparent !important; /* Hace que el fondo sea transparente */
+  color: white !important; /* Cambia el color de la flecha */
+  filter: invert(1); /* Invierte el color del ícono para que sea blanco */
+}
+
 .accordion-button:not(.collapsed) {
   background-color: #007bff !important;
   color: black !important;
