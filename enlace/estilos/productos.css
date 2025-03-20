@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body::before {
   display: block;
   content: "";
@@ -127,6 +131,38 @@ html {
 .imagen-responsive {
   max-width: 100%; /* Asegura que la imagen no se extienda más allá de su contenedor */
   height: auto; /* Ajusta la altura automáticamente para mantener la relación de aspecto */
+}
+
+/* SECCION PREGUNTAS FRECUENTES */
+.pregunta {
+  padding: 50px 0;
+  color: white;
+}
+.titulo-pregunta {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.subtitulo-pregunta {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.accordion-button {
+  background-color: #343a40;
+  color: white;
+  font-weight: bold;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #495057;
+  color: white;
+}
+.accordion-body {
+  background-color: #fff;
+  color: black;
+}
+.lista-pagos li {
+  margin-left: 20px;
 }
 
 /* FOOTER */

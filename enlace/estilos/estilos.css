@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #nosotros {
   scroll-margin-top: 80px; /* Ajusta según la altura de tu navbar */
 }
@@ -191,18 +195,46 @@ html {
 }
 
 /* ESTILO SECCION SERVICIOS */
+
+.titulo-s3{
+  color: #ff0000;
+}
+.servicio-banner {
+  position: relative;
+  background: url('../img/nn.jpg') no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.servicio-banner .container {
+  position: relative;
+  z-index: 2;
+}
+
 .btn-contacto {
   display: inline-block;
-  padding: clamp(8px, 2vw, 12px) clamp(20px, 5vw, 40px);
+  padding: 10px 30px;
   background-color: black;
   color: white;
   text-decoration: none;
   border-radius: 50px;
   transition: background-color 0.3s ease;
   font-weight: bold;
-  text-align: center;
-  max-width: 250px;
-  width: 100%;
 }
 
 .btn-contacto:hover {
@@ -210,41 +242,16 @@ html {
   color: white;
 }
 
-.titulo {
-  font-size: 40px;
-}
-
-.p-descripcion {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.servicio {
-  background-size: cover;
-  background-position: center;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  color: white;
-  position: relative;
-}
-
-.bg-dark {
-  background-color: #121212;
-}
-
 @media (max-width: 768px) {
-  .btn-contacto {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    margin: 10px auto;
+  .servicio-banner {
+      height: auto;
+      padding: 60px 20px;
   }
-  .titulo {
-    font-size: 30px;
+  .titulo-s3 {
+      font-size: 24px;
   }
-  .p-descripcion {
-    font-size: 18px;
+  .p-s3 {
+      font-size: 16px;
   }
 }
 
