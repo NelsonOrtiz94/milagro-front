@@ -261,7 +261,7 @@ html {
 }
 
 .titulo-pregunta {
-  background-color: #ffd700;
+  background-color: #007bff;
   padding: 15px;
   border-radius: 10px;
   text-align: center;
@@ -304,14 +304,14 @@ html {
 
 
 .accordion-button {
-  background-color: #343a40;
-  color: white;
+  background-color: #343a40 !important;
+  color: white !important;
   font-weight: bold;
-  border: 1px solid #FFD700; /* Bordes dorados */
+  border: 1px solid #007bff !important; /* Bordes dorados */
 }
 .accordion-button:not(.collapsed) {
-  background-color: #FFD700;
-  color: black;
+  background-color: #007bff !important;
+  color: black !important;
 }
 
 
