@@ -330,7 +330,6 @@ html {
   background-color: #343a40 !important;
   color: white !important;
   font-weight: bold;
-  border: 1px solid #007bff !important; /* Bordes dorados */
 }
 
 .accordion-button::after {
