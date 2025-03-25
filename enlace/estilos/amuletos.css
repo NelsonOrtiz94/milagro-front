@@ -186,12 +186,35 @@ html {
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
+  pointer-events: none;
 }
 
 /* Contenido de cada amuleto */
 .amuletos-banner .container {
   position: relative;
+  text-align: center;
   z-index: 2;
+}
+
+/* Ajuste del título */
+.amuletos-banner h3 {
+  font-size: 36px; /* Tamaño más grande */
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9); /* Mayor contraste */
+  margin-bottom: 15px;
+}
+
+
+/* Ajuste del párrafo */
+.amuletos-banner .p-amuletos {
+  font-size: 20px; /* Más grande */
+  line-height: 1.5;
+  max-width: 80%;
+  margin: 0 auto 20px auto; /* Centrando el texto */
+  background: rgba(0, 0, 0, 0.6); /* Fondo oscuro difuminado */
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
 /* Estilo del botón de contacto */
@@ -202,15 +225,19 @@ html {
   color: white;
   text-decoration: none;
   border-radius: 50px;
+  border-width: 3px;
   transition: background-color 0.3s ease;
   font-weight: bold;
   font-size: 18px;
   border: 2px solid white;
+  position: relative; /* Se asegura que el botón esté sobre el overlay */
+  z-index: 3; /* Más alto que el overlay */
 }
 
 .btn-amuletos:hover {
   background-color: #ffcc00;
   color: black;
+  transform: scale(1.1);
 }
 
 /* RESPONSIVE DESIGN */
