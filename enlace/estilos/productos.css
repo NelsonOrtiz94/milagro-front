@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+#nosotros {
+  scroll-margin-top: 80px; /* Ajusta según la altura de tu navbar */
+}
+
 body::before {
   display: block;
   content: "";
@@ -69,7 +73,7 @@ html {
 
 /* PORTADA AMARRES */
 .portada-amarres {
-  background-image: url("../img/portada-prod.jpg");
+  background-image: url("../img/amulet-713355_1280.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
