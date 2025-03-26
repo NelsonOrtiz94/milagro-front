@@ -137,6 +137,82 @@ html {
   height: auto; /* Ajusta la altura automáticamente para mantener la relación de aspecto */
 }
 
+/* SECCION SERVICIOS */
+.servicio {
+  padding: 60px 0;
+}
+
+.servicio-img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.servicio-img:hover {
+  transform: scale(1.05);
+}
+
+.servicio-texto {
+  padding: 20px;
+}
+
+.servicio h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.servicio p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.servicio-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.servicio-lista li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Botón de contacto */
+.btn-contacto {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  color: #fff;
+  background: linear-gradient(45deg, #ff007f, #ff512f);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-contacto:hover {
+  background: linear-gradient(45deg, #ff512f, #ff007f);
+  transform: scale(1.05);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .row {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .servicio-img {
+      max-width: 90%;
+      margin-bottom: 20px;
+  }
+
+  .btn-contacto {
+      display: block;
+      margin: 0 auto;
+  }
+}
+
 /* SECCION PREGUNTAS FRECUENTES */
 .pregunta {
   padding: 50px 0;
