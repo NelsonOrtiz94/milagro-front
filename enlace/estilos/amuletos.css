@@ -172,6 +172,12 @@ html {
   box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
 }
 
+/* Contenido de cada amuleto */
+.amuletos-banner .col-md {
+  position: relative;
+  z-index: 3; /* Asegura que el texto y botón estén por encima */
+}
+
 /* Efecto hover */
 .amuletos-banner:hover {
   transform: scale(1.05);
