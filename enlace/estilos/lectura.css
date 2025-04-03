@@ -202,27 +202,27 @@ html {
   }
   
   .lectura-tarot {
-    background-image: url('../img/agua.png');
+    background-image: url('../img/tarot.png');
   }
   
   .lectura-astros {
-    background-image: url('../img/astrologia.jpg');
+    background-image: url('../img/astros.png');
   }
   
   .lectura-manos {
-    background-image: url('../img/palmas.jpg');
+    background-image: url('../img/mano.png');
   }
   
   .lectura-numerologia {
-    background-image: url('../img/numerologia.jpg');
+    background-image: url('../img/numero.png');
   }
   
   .lectura-runas {
-    background-image: url('../img/runas.jpg');
+    background-image: url('../img/run.png');
   }
   
   .lectura-pendulo {
-    background-image: url('../img/pendulo.jpg');
+    background-image: url('../img/pendulo.png');
   }
 
   @keyframes fadeInUp {
