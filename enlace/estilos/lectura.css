@@ -1,0 +1,285 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  #nosotros {
+    scroll-margin-top: 80px;
+  }
+  
+  body::before {
+    display: block;
+    content: "";
+    height: 10px;
+  }
+  
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container .img-nav {
+    width: 10%;
+    height: auto;
+  }
+  
+  /* NAVBAR */
+  .navbar-nav {
+    margin-left: -1%;
+    width: 45%;
+    background-color: #ffff;
+    color: #fff;
+    padding: 10px 0;
+    margin-right: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar ul {
+    display: flex;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin: 0 1em;
+    list-style: none;
+  }
+  
+  /* ICONOS */
+  .navbar-social-icons a {
+    margin-right: 10px;
+  }
+  
+  .icon-wp,
+  .icon-fb,
+  .icon-mail {
+    width: 24px;
+    height: 24px;
+    color: black;
+  }
+  
+  .icon-wp:hover {
+    color: rgb(2, 133, 2);
+  }
+  
+  .icon-fb:hover {
+    color: rgb(4, 0, 255);
+  }
+  
+  .icon-mail:hover {
+    color: rgb(255, 0, 0);
+  }
+  
+  /* PORTADA LECTURA */
+  .portada-lectura {
+    background-image: url("../img/portada-prod.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: gold;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .portada-lectura::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .portada-contenido-lectura {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+  }
+  
+  .titulo-portada-lectura {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  
+  .descripcion-portada-lectura {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+  }
+  
+  .imagen-responsive {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .imagen-responsive:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 1024px) {
+    .titulo-portada-lectura {
+      font-size: 2.5rem;
+    }
+    .descripcion-portada-lectura {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .portada-lectura {
+      height: auto;
+      padding: 60px 20px;
+    }
+    .portada-contenido-lectura {
+      padding: 20px;
+    }
+    .titulo-portada-lectura {
+      font-size: 2rem;
+    }
+    .descripcion-portada-lectura {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .titulo-portada-lectura {
+      font-size: 1.8rem;
+    }
+    .descripcion-portada-lectura {
+      font-size: 0.9rem;
+    }
+    .imagen-responsive {
+      border-radius: 5px;
+    }
+  }
+  
+  /* SECCION DE LECTURAS */
+  .lecturas-espirituales {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  .titulo-seccion {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .contenedor-banners {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .banner {
+    position: relative;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeInUp 1.2s ease forwards;
+    opacity: 0;
+  }
+  
+  .lectura-tarot {
+    background-image: url('../img/agua.png');
+  }
+  
+  .lectura-astros {
+    background-image: url('../img/astrologia.jpg');
+  }
+  
+  .lectura-manos {
+    background-image: url('../img/palmas.jpg');
+  }
+  
+  .lectura-numerologia {
+    background-image: url('../img/numerologia.jpg');
+  }
+  
+  .lectura-runas {
+    background-image: url('../img/runas.jpg');
+  }
+  
+  .lectura-pendulo {
+    background-image: url('../img/pendulo.jpg');
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Glow para títulos */
+  .titulo-seccion, .contenido-banner h3 {
+    text-shadow: 0 0 10px #e4c17b, 0 0 20px #e4c17b;
+  }
+  
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .contenido-banner {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .contenido-banner h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .contenido-banner p {
+    font-size: 1.1em;
+  }
+  
+  .banner:hover .overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .titulo-seccion {
+      font-size: 2em;
+    }
+    .contenido-banner h3 {
+      font-size: 1.5em;
+    }
+    .contenido-banner p {
+      font-size: 1em;
+    }
+  }
