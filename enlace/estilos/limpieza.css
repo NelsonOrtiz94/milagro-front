@@ -86,7 +86,6 @@ html {
   position: relative;
 }
 
-/* Capa de oscurecimiento para mejorar la legibilidad */
 .portada-limpieza::before {
   content: "";
   position: absolute;
@@ -97,7 +96,6 @@ html {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* Contenido centrado y adaptado */
 .portada-contenido-limpieza {
   position: relative;
   z-index: 2;
@@ -107,7 +105,6 @@ html {
   border-radius: 10px;
 }
 
-/* TÍTULO */
 .titulo-portada-limpieza {
   font-size: 3rem;
   font-weight: bold;
@@ -115,13 +112,11 @@ html {
   margin-bottom: 15px;
 }
 
-/* DESCRIPCIÓN */
 .descripcion-portada-limpieza {
   font-size: 1.3rem;
   margin-bottom: 25px;
 }
 
-/* Imagen responsiva */
 .imagen-responsive {
   max-width: 100%;
   height: auto;
@@ -133,7 +128,6 @@ html {
   transform: scale(1.05);
 }
 
-/* 🔹 RESPONSIVE DESIGN 🔹 */
 @media (max-width: 1024px) {
   .titulo-portada-limpieza {
     font-size: 2.5rem;
@@ -177,50 +171,114 @@ html {
   }
 }
 
-/* SECCION LIMPIEZA */
-body {
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-  color: #f4f4f4;
+/* SECCION DE PRODUCTOS */
+.limpiezas-energeticas {
   text-align: center;
+  padding: 50px 20px;
+  background-color: #111;
+  color: #fff;
 }
-.seccion-limpieza {
-  padding: 60px 20px;
-  max-width: 900px;
+.titulo-seccion {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.contenedor-banners {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
   margin: auto;
 }
-h2 {
-  font-family: 'Cinzel', serif;
-  font-size: 2em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  background: linear-gradient(to right, #e0e0e0, #b3b3b3);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.contenedor {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
-}
-.tarjeta {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
+.banner {
+  position: relative;
+  height: 250px;
   border-radius: 10px;
-  transition: transform 0.3s, background 0.3s;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.tarjeta:hover {
-  transform: scale(1.05);
-  background: rgba(255, 255, 255, 0.2);
+
+/* Imágenes para los servicios físicos */
+.limpieza-sal {
+  background-image: url('../img/sal.png');
 }
-.tarjeta h3 {
-  font-family: 'Cinzel', serif;
-  font-size: 1.5em;
+.limpieza-agua {
+  background-image: url('../img/agua.png');
+}
+.limpieza-fuego {
+  background-image: url('../img/fuego.png');
+}
+
+/* Imágenes para los servicios espirituales */
+.limpieza-oraciones {
+  background-image: url('../img/oracion.png');
+}
+.limpieza-meditacion {
+  background-image: url('../img/meditacion.png');
+}
+.limpieza-ritual {
+  background-image: url('../img/ritual.png');
+}
+
+/* Imágenes para los servicios con herramientas */
+.limpieza-cristales {
+  background-image: url('../img/cristales.png');
+}
+.limpieza-esencias {
+  background-image: url('../img/escencia.png');
+}
+.limpieza-sonido {
+  background-image: url('../img/sonido.png');
+}
+
+/* Imágenes para las técnicas energéticas */
+.limpieza-reiki {
+  background-image: url('../img/ritual.png');
+}
+.limpieza-chakra {
+  background-image: url('../img/cristales.png');
+}
+.limpieza-fengshui {
+  background-image: url('../img/feng.png');
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.contenido-banner {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.contenido-banner h3 {
+  font-size: 1.8em;
   margin-bottom: 10px;
 }
-.tarjeta p {
-  font-size: 1em;
-  opacity: 0.8;
+.contenido-banner p {
+  font-size: 1.1em;
+}
+.banner:hover .overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+  .titulo-seccion {
+      font-size: 2em;
+  }
+  .contenido-banner h3 {
+      font-size: 1.5em;
+  }
+  .contenido-banner p {
+      font-size: 1em;
+  }
 }
