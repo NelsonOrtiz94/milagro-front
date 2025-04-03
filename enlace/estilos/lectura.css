@@ -73,7 +73,7 @@ html {
   
   /* PORTADA LECTURA */
   .portada-lectura {
-    background-image: url("../img/portada-prod.jpg");
+    background-image: url("../img/portada-lec.png");
     background-size: cover;
     background-position: center;
     height: 100vh;
