@@ -144,155 +144,107 @@ html {
 }
 
 /* ESTILO SECCIÓN AMULETOS */
-#amuletos {
-  background-color: #111; /* Fondo oscuro elegante */
-  padding: 50px 0;
-}
-
-/* Título de la sección */
-.titulo-amuletos {
-  color: #ffcc00;
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+.lecturas-espirituales {
   text-align: center;
-  margin-bottom: 40px;
+  padding: 50px 20px;
+  background-color: #111;
+  color: #fff;
 }
 
-/* Contenedor de cada amuleto */
-.amuletos-banner {
+.titulo-seccion {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #e4c17b, 0 0 20px #e4c17b;
+}
+
+.contenedor-banners {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.banner {
   position: relative;
-  height: 400px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 40px 20px;
-  color: white;
-  background-size: cover;
-  background-position: center;
-  transition: transform 0.3s ease-in-out;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+  animation: fadeInUp 1.2s ease forwards;
+  opacity: 0;
 }
 
-/* Contenido de cada amuleto */
-.amuletos-banner .col-md {
-  position: relative;
-  z-index: 3; /* Asegura que el texto y botón estén por encima */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Efecto hover */
-.amuletos-banner:hover {
-  transform: scale(1.05);
-}
-
-/* Fondo oscuro semitransparente para mejorar legibilidad */
-.overlay-amuletos {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-  pointer-events: none;
 }
 
-/* Contenido de cada amuleto */
-.amuletos-banner .container {
+.contenido-banner {
   position: relative;
-  text-align: center;
   z-index: 2;
-}
-
-/* Ajuste del título */
-.amuletos-banner h3 {
-  font-size: 36px; /* Tamaño más grande */
-  font-weight: bold;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9); /* Mayor contraste */
-  margin-bottom: 15px;
-}
-
-
-/* Ajuste del párrafo */
-.amuletos-banner .p-amuletos {
-  font-size: 20px; /* Más grande */
-  line-height: 1.5;
-  max-width: 80%;
-  margin: 0 auto 20px auto; /* Centrando el texto */
-  background: rgba(0, 0, 0, 0.6); /* Fondo oscuro difuminado */
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-
-/* Estilo del botón de contacto */
-.btn-amuletos {
-  display: inline-block;
-  padding: 12px 35px;
-  background-color: #ff0000;
   color: white;
-  text-decoration: none;
-  border-radius: 50px;
-  border-width: 3px;
-  transition: background-color 0.3s ease;
-  font-weight: bold;
-  font-size: 18px;
-  border: 2px solid white;
-  position: relative; /* Se asegura que el botón esté sobre el overlay */
-  z-index: 3; /* Más alto que el overlay */
+  text-align: center;
+  padding: 20px;
 }
 
-.btn-amuletos:hover {
-  background-color: #ffcc00;
-  color: black;
-  transform: scale(1.1);
+.contenido-banner h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
 }
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-  .amuletos-banner {
-    height: auto;
-    padding: 60px 20px;
-  }
-
-  .titulo-amuletos {
-    font-size: 26px;
-  }
-
-  .p-amuletos {
-    font-size: 16px;
-  }
+.contenido-banner p {
+  font-size: 1.1em;
 }
 
-/* IMÁGENES DE FONDO PARA CADA AMULETO */
-#amuletos-talismanes {
-  background-image: url("../img/talis.webp");
+.banner:hover .overlay {
+  background: rgba(0, 0, 0, 0.3);
 }
 
-#amuletos-ojo-de-dios {
-  background-image: url("../img/ojo.webp");
+.amuleto-talismanes {
+  background-image: url('../img/talis.webp');
 }
 
-#amuletos-cruz {
-  background-image: url("../img/amule.webp");
+.amuleto-ojo {
+  background-image: url('../img/ojo.webp');
 }
 
-#amuletos-estrella {
-  background-image: url("../img/amule-2.webp");
+.amuleto-cruz {
+  background-image: url('../img/amule.webp');
 }
 
-#amuletos-amor {
-  background-image: url("../img/amor.webp");
+.amuleto-estrella {
+  background-image: url('../img/amule-2.webp');
 }
 
-#amuletos-riqueza {
-  background-image: url("../img/riqueza.webp");
+.amuleto-amor {
+  background-image: url('../img/amor.webp');
 }
 
-#amuletos-moneda-china {
-  background-image: url("../img/moneda.webp");
+.amuleto-riqueza {
+  background-image: url('../img/riqueza.webp');
+}
+
+.amuleto-moneda {
+  background-image: url('../img/moneda.webp');
 }
