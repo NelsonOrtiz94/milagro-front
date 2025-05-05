@@ -197,6 +197,12 @@ html {
 /* ESTILO SECCION SERVICIOS */
 .titulo-s3 {
   color: #ff0000;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.p-s3 {
+  color: #fff;
+  font-size: 20px;
 }
 
 .servicio-banner {
@@ -239,7 +245,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 
