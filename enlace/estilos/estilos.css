@@ -61,6 +61,7 @@ html {
 /* ICONOS */
 .navbar-social-icons a {
   margin-right: 10px;
+  text-decoration: none;
 }
 
 .icon-wp,
