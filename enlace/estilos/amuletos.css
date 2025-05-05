@@ -93,7 +93,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Reducí la opacidad */
+  background: rgba(0, 0, 0, 0.5)
 }
 
 .portada-contenido-amuletos {
@@ -197,7 +197,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .contenido-banner {
@@ -209,12 +209,14 @@ html {
 }
 
 .contenido-banner h3 {
-  font-size: 1.8em;
+  font-size: 2em;
   margin-bottom: 10px;
+  text-shadow: 0 0 10px #000000, 0 0 20px #000000;
 }
 
 .contenido-banner p {
   font-size: 1.1em;
+  text-shadow: #000000 0px 0px 10px, #000000 0px 0px 20px;
 }
 
 .banner:hover .overlay {
