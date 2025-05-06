@@ -250,3 +250,27 @@ html {
 .amuleto-moneda {
   background-image: url('../img/moneda.webp');
 }
+
+/* BANNERS DE VELAS */
+.vela-blanca {
+  background-image: url('../img/vela-blanca.jpg');
+}
+.vela-roja {
+  background-image: url('../img/vela-roja.jpg');
+}
+.vela-verde {
+  background-image: url('../img/vela-verde.jpg');
+}
+.vela-amarilla {
+  background-image: url('../img/vela-amarilla.jpg');
+}
+.vela-azul {
+  background-image: url('../img/vela-azul.jpg');
+}
+.vela-morada {
+  background-image: url('../img/vela-morada.jpg');
+}
+
+/* Aplica el mismo estilo de .banner, .overlay, .contenido-banner como en la sección de amuletos */
+
+
