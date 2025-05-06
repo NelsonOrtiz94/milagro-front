@@ -253,19 +253,19 @@ html {
 
 /* BANNERS DE VELAS */
 .vela-blanca {
-  background-image: url('../img/vela-blanca.jpg');
+  background-image: url('../img/vela-blanca.png');
 }
 .vela-roja {
-  background-image: url('../img/vela-roja.jpg');
+  background-image: url('../img/vela-roja.png');
 }
 .vela-verde {
-  background-image: url('../img/vela-verde.jpg');
+  background-image: url('../img/vela-verde.png');
 }
 .vela-amarilla {
-  background-image: url('../img/vela-amarilla.jpg');
+  background-image: url('../img/vela-amarilla.png');
 }
 .vela-azul {
-  background-image: url('../img/vela-azul.jpg');
+  background-image: url('../img/vela-azul.png');
 }
 .vela-morada {
   background-image: url('../img/vela-morada.jpg');
