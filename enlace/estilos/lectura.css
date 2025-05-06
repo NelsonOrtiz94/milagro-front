@@ -262,10 +262,12 @@ html {
   .contenido-banner h3 {
     font-size: 1.8em;
     margin-bottom: 10px;
+    text-shadow: #111 0px 0px 10px, #111 0px 0px 20px;
   }
   
   .contenido-banner p {
     font-size: 1.1em;
+    text-shadow: #111 0px 0px 10px, #111 0px 0px 20px;
   }
   
   .banner:hover .overlay {
@@ -283,3 +285,52 @@ html {
       font-size: 1em;
     }
   }
+
+  .signo-aries {
+    background-image: url('../img/aries.png');
+  }
+  
+  .signo-tauro {
+    background-image: url('../img/tauro.png');
+  }
+  
+  .signo-geminis {
+    background-image: url('../img/geminis.png');
+  }
+  
+  .signo-cancer {
+    background-image: url('../img/cancer.png');
+  }
+  
+  .signo-leo {
+    background-image: url('../img/leo.png');
+  }
+  
+  .signo-virgo {
+    background-image: url('../img/virgo.png');
+  }
+  
+  .signo-libra {
+    background-image: url('../img/libra.png');
+  }
+  
+  .signo-escorpio {
+    background-image: url('../img/escorpio.png');
+  }
+  
+  .signo-sagitario {
+    background-image: url('../img/sagitario.png');
+  }
+  
+  .signo-capricornio {
+    background-image: url('../img/capricornio.png');
+  }
+  
+  .signo-acuario {
+    background-image: url('../img/acuario.png');
+  }
+  
+  .signo-piscis {
+    background-image: url('../img/piscis.png');
+  }
+  
