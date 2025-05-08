@@ -1,285 +1,241 @@
 html {
-    scroll-behavior: smooth;
-  }
-  
-  #nosotros {
-    scroll-margin-top: 80px; /* Ajusta según la altura de tu navbar */
-  }
-  
-  body::before {
-    display: block;
-    content: "";
-    height: 10px;
-  }
-  
-  body,
-  html {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container .img-nav {
-    width: 10%;
-    height: auto;
-  }
-  
-  /* NAVBAR */
-  .navbar-nav {
-    margin-left: -1%;
-    width: 45%;
-    background-color: #ffff; /* Cambié "dark" por un color real */
-    color: #fff;
-    padding: 10px 0;
-    margin-right: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .navbar ul {
-    display: flex;
-    padding: 0;
-  }
-  
-  .navbar ul li {
-    margin: 0 1em;
-    list-style: none;
-  }
-  
-  /* ICONOS */
-  .navbar-social-icons a {
-    margin-right: 10px;
-  }
-  
-  .icon-wp,
-  .icon-fb,
-  .icon-mail {
-    width: 24px;
-    height: 24px;
-    color: black;
-  }
-  
-  .icon-wp:hover {
-    color: rgb(2, 133, 2);
-  }
-  
-  .icon-fb:hover {
-    color: rgb(4, 0, 255);
-  }
-  
-  .icon-mail:hover {
-    color: rgb(255, 0, 0);
-  }
-  
-  /* PORTADA LIMPIEZA */
-  .portada-limpieza {
-    background-image: url("../img/portada-prod.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: gold;
-    padding: 20px;
-    position: relative;
-  }
-  
-  .portada-limpieza::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-  }
-  
-  .portada-contenido-limpieza {
-    position: relative;
-    z-index: 2;
-    max-width: 900px;
-    padding: 30px;
-    background: rgba(0, 0, 0, 0.4); /* Transparencia para resaltar el texto */
-    border-radius: 10px;
-  }
-  
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+#nosotros {
+  scroll-margin-top: 80px; /* Ajusta según la altura de tu navbar */
+}
+
+#preguntas {
+  scroll-margin-top: 60px; /* Ajusta según la altura de tu navbar */
+}
+
+#testimonios {
+  scroll-margin-top: 50px; /* Ajusta según la altura de tu navbar */
+}
+
+#contacto {
+  scroll-margin-top: 50px; /* Ajusta según la altura de tu navbar */
+}
+
+.container .img-nav {
+  width: 10%;
+  height: auto;
+}
+
+/* NAVBAR */
+.navbar-nav {
+  margin-left: -1%;
+  width: 45%;
+  background-color: #ffff; /* Cambié "dark" por un color real */
+  color: #fff;
+  padding: 10px 0;
+  margin-right: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 1em;
+  list-style: none;
+}
+
+/* ICONOS */
+.navbar-social-icons a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.icon-wp,
+.icon-fb,
+.icon-mail {
+  width: 24px;
+  height: 24px;
+  color: black;
+}
+
+.icon-wp:hover {
+  color: rgb(2, 133, 2);
+}
+
+.icon-fb:hover {
+  color: rgb(4, 0, 255);
+}
+
+.icon-mail:hover {
+  color: rgb(255, 0, 0);
+}
+
+.portada-limpieza {
+  background-image: url("../img/portada-signos.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: gold;
+  padding: 20px;
+  position: relative;
+}
+
+.portada-limpieza::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.portada-contenido-limpieza {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.titulo-portada-limpieza {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.descripcion-portada-limpieza {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+}
+
+.imagen-responsive {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.imagen-responsive:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
   .titulo-portada-limpieza {
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 15px;
+    font-size: 2rem;
   }
-  
+
   .descripcion-portada-limpieza {
-    font-size: 1.3rem;
-    margin-bottom: 25px;
+    font-size: 1rem;
   }
-  
-  .imagen-responsive {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+}
+
+/* SECCIÓN SIGNOS ZODIACALES */
+.lecturas-espirituales {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #111;
+  color: #fff;
+}
+
+.titulo-seccion {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #e4c17b, 0 0 20px #e4c17b;
+}
+
+.contenedor-banners {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.banner {
+  position: relative;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInUp 1.2s ease forwards;
+  opacity: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.banner:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.5); */
+}
+
+.contenido-banner {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.contenido-banner h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  text-shadow: #111 0px 0px 10px, #111 0px 0px 20px;
+}
+
+.contenido-banner p {
+  font-size: 1.1em;
+  text-shadow: #111 0px 0px 10px, #111 0px 0px 20px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-  
-  .imagen-responsive:hover {
-    transform: scale(1.05);
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  @media (max-width: 1024px) {
-    .titulo-portada-limpieza {
-      font-size: 2.5rem;
-    }
-  
-    .descripcion-portada-limpieza {
-      font-size: 1.2rem;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .portada-limpieza {
-      height: auto;
-      padding: 60px 20px;
-    }
-  
-    .portada-contenido-limpieza {
-      padding: 20px;
-    }
-  
-    .titulo-portada-limpieza {
-      font-size: 2rem;
-    }
-  
-    .descripcion-portada-limpieza {
-      font-size: 1rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .titulo-portada-limpieza {
-      font-size: 1.8rem;
-    }
-  
-    .descripcion-portada-limpieza {
-      font-size: 0.9rem;
-    }
-  
-    .imagen-responsive {
-      border-radius: 5px;
-    }
-  }
-  
-  /* SECCION DE PRODUCTOS */
-  .limpiezas-energeticas {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #111;
-    color: #fff;
-  }
-  .titulo-seccion {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
-  .contenedor-banners {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: auto;
-  }
-  .banner {
-    position: relative;
-    height: 250px;
-    border-radius: 10px;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Imágenes para los servicios físicos */
-  .limpieza-sal {
-    background-image: url('../img/sal.png');
-  }
-  .limpieza-agua {
-    background-image: url('../img/agua.png');
-  }
-  .limpieza-fuego {
-    background-image: url('../img/fuego.png');
-  }
-  
-  /* Imágenes para los servicios espirituales */
-  .limpieza-oraciones {
-    background-image: url('../img/oracion.png');
-  }
-  .limpieza-meditacion {
-    background-image: url('../img/meditacion.png');
-  }
-  .limpieza-ritual {
-    background-image: url('../img/ritual.png');
-  }
-  
-  /* Imágenes para los servicios con herramientas */
-  .limpieza-cristales {
-    background-image: url('../img/cristales.png');
-  }
-  .limpieza-esencias {
-    background-image: url('../img/escencia.png');
-  }
-  .limpieza-sonido {
-    background-image: url('../img/sonido.png');
-  }
-  
-  /* Imágenes para las técnicas energéticas */
-  .limpieza-reiki {
-    background-image: url('../img/ritual.png');
-  }
-  .limpieza-chakra {
-    background-image: url('../img/cristales.png');
-  }
-  .limpieza-fengshui {
-    background-image: url('../img/feng.png');
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-  }
-  .contenido-banner {
-    position: relative;
-    z-index: 2;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  .contenido-banner h3 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-  }
-  .contenido-banner p {
-    font-size: 1.1em;
-  }
-  .banner:hover .overlay {
-    background: rgba(0, 0, 0, 0.3);
-  }
-  @media (max-width: 768px) {
-    .titulo-seccion {
-        font-size: 2em;
-    }
-    .contenido-banner h3 {
-        font-size: 1.5em;
-    }
-    .contenido-banner p {
-        font-size: 1em;
-    }
-  }
-  
+}
+
+.signo-aries { background-image: url('../img/aries.png'); }
+.signo-tauro { background-image: url('../img/tauro.png'); }
+.signo-geminis { background-image: url('../img/geminis.png'); }
+.signo-cancer { background-image: url('../img/cancer.png'); }
+.signo-leo { background-image: url('../img/leo.png'); }
+.signo-virgo { background-image: url('../img/virgo.png'); }
+.signo-libra { background-image: url('../img/libra.png'); }
+.signo-escorpio { background-image: url('../img/escorpio.png'); }
+.signo-sagitario { background-image: url('../img/sagitario.png'); }
+.signo-capricornio { background-image: url('../img/capricornio.png'); }
+.signo-acuario { background-image: url('../img/acuario.png'); }
+.signo-piscis { background-image: url('../img/piscis.png'); }
