@@ -29,6 +29,11 @@ html {
   height: auto;
 }
 
+ .container .img-nav {
+    width: 50%;
+    height: auto;
+  }
+
 /* NAVBAR */
 .navbar-nav {
   margin-left: -1%;
