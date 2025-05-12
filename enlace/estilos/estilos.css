@@ -204,6 +204,7 @@ html {
 .p-s3 {
   color: #fff;
   font-size: 20px;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .servicio-banner {
@@ -279,10 +280,12 @@ html {
 
   .titulo-s3 {
       font-size: 24px;
+      text-shadow: 2px 2px 4px #000000;
   }
 
   .p-s3 {
       font-size: 16px;
+      text-shadow: 2px 2px 4px #000000;
   }
 }
 
