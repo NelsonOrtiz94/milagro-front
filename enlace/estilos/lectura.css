@@ -333,4 +333,47 @@ html {
   .signo-piscis {
     background-image: url('../img/piscis.png');
   }
+
+  .whatsapp-float {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 55px;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.call-float {
+  position: fixed;
+  bottom: 160px; /* encima del botón de WhatsApp si está a 20px */
+  right: 25px;  /* separado hacia la izquierda */
+  background-color: #007bff; /* azul */
+  color: white;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.call-float:hover {
+  transform: scale(1.1);
+}
+
   
