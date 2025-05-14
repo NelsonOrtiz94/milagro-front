@@ -659,7 +659,7 @@ footer .bi-arrow-up-circle:hover {
 .call-float {
   position: fixed;
   bottom: 160px; /* encima del botón de WhatsApp si está a 20px */
-  right: 25px;  /* separado hacia la izquierda */
+  right: 22px;  /* separado hacia la izquierda */
   background-color: #007bff; /* azul */
   color: white;
   font-size: 24px;
