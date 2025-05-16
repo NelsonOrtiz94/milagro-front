@@ -4,6 +4,9 @@
 <head lang="es">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Sesiones de armonización personal y recursos energéticos para tu bienestar interior. Contáctanos por WhatsApp." />
+
 
     <!-- Estilos locales y frameworks seguros -->
     <link rel="stylesheet" href="./estilos/estilos.css" />
@@ -17,6 +20,8 @@
 
     <!-- Canonical para SEO -->
     <link rel="canonical" href="https://elmilagrodelamor.com/" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
     <title>Guía Espiritual y Bienestar Emocional</title>
 </head>
@@ -70,7 +75,7 @@
     <!--Portada 1-->
     <section class="portada" id="nosotros">
         <div class="contenido-portada text-center">
-            <h2 class="yellow-box-portada">GUÍA ESPIRITUAL PERSONALIZADA Y CONEXIÓN ENERGÉTICA</h2>
+            <h1 class="yellow-box-portada">GUÍA ESPIRITUAL PERSONALIZADA Y CONEXIÓN ENERGÉTICA</h1>
             <p>Descubre tu equilibrio interior con sesiones diseñadas para tu bienestar emocional y espiritual.</p>
             <h3 class="yellow-box-subtitulo">CONEXIÓN ENERGÉTICA PROFUNDA</h3>
             <h3 class="yellow-box-subtitulo">ORIENTACIÓN EMOCIONAL PERSONAL</h3>
@@ -449,6 +454,25 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": { "background": "#000" },
+                    "button": { "background": "#f1d600" }
+                },
+                "theme": "classic",
+                "content": {
+                    "message": "Este sitio utiliza cookies para mejorar tu experiencia.",
+                    "dismiss": "Entendido",
+                    "link": "Leer más",
+                    "href": "/privacy-policy.html"
+                }
+            })
+        });
+    </script>
 
     <!-- Botones flotantes simplificados y accesibles -->
     <a href="https://wa.me/19517013226" target="_blank" aria-label="Contactar por WhatsApp" class="whatsapp-float">
