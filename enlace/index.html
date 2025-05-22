@@ -23,6 +23,32 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
+    <style>
+        #imessage-float {
+            position: fixed;
+            bottom: 20px;
+            right: 80px;
+            /* entre WhatsApp y Llamar */
+            width: 56px;
+            height: 56px;   
+            border-radius: 50%;
+            background-color: #e1ff00;
+            /* azul iOS */
+            display: ruby;
+            /* oculto por defecto */
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        #imessage-float i {
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+        }
+    </style>
+
     <title>Guía Espiritual y Bienestar Emocional</title>
 </head>
 
@@ -474,6 +500,12 @@
         });
     </script>
 
+    <script>
+        if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+            document.getElementById('imessage-float').style.display = 'flex';
+        }
+    </script>
+
     <!-- Botones flotantes simplificados y accesibles -->
     <a href="https://wa.me/19517013226" target="_blank" aria-label="Contactar por WhatsApp" class="whatsapp-float">
         <i class="bi bi-whatsapp fs-3"></i>
@@ -483,7 +515,10 @@
         <i class="bi bi-telephone-fill fs-3"></i>
     </a>
 
-
+    <a href="sms:+19517013226?&body=¡Hola!%20Quiero%20más%20información" id="imessage-float"
+        aria-label="Enviar mensaje por iMessage">
+        <i class="bi bi-chat-text"></i>
+    </a>
 
 </body>
 
