@@ -679,11 +679,11 @@ footer .bi-arrow-up-circle:hover {
 /* BOTON IMESAGGE  */
 .imessage-float {
   position: fixed;
-  bottom: 240px;
+  bottom: 238px;
   right: 23px;
   /* entre WhatsApp y Llamar */
-  width: 56px;
-  height: 56px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: #e1ff00;
   /* azul iOS */
