@@ -687,7 +687,7 @@ footer .bi-arrow-up-circle:hover {
   border-radius: 50%;
   background-color: #e1ff00;
   /* azul iOS */
-  display: ruby;
+  display: none;
   /* oculto por defecto */
   align-items: center;
   justify-content: center;
