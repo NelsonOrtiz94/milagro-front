@@ -274,18 +274,18 @@ html {
 
 @media (max-width: 768px) {
   .servicio-banner {
-      height: auto;
-      padding: 60px 20px;
+    height: auto;
+    padding: 60px 20px;
   }
 
   .titulo-s3 {
-      font-size: 24px;
-      text-shadow: 2px 2px 4px #000000;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px #000000;
   }
 
   .p-s3 {
-      font-size: 16px;
-      text-shadow: 2px 2px 4px #000000;
+    font-size: 16px;
+    text-shadow: 2px 2px 4px #000000;
   }
 }
 
@@ -352,7 +352,6 @@ html {
   background-color: #007bff !important;
   color: black !important;
 }
-
 
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
@@ -639,7 +638,7 @@ footer .bi-arrow-up-circle:hover {
   position: fixed;
   bottom: 80px;
   right: 20px;
-  background-color: #25D366;
+  background-color: #25d366;
   color: white;
   font-size: 24px;
   width: 60px;
@@ -659,7 +658,7 @@ footer .bi-arrow-up-circle:hover {
 .call-float {
   position: fixed;
   bottom: 160px; /* encima del botón de WhatsApp si está a 20px */
-  right: 22px;  /* separado hacia la izquierda */
+  right: 22px; /* separado hacia la izquierda */
   background-color: #007bff; /* azul */
   color: white;
   font-size: 24px;
@@ -677,6 +676,30 @@ footer .bi-arrow-up-circle:hover {
   transform: scale(1.1);
 }
 
+/* BOTON IMESAGGE  */
+.imessage-float {
+  position: fixed;
+  bottom: 240px;
+  right: 23px;
+  /* entre WhatsApp y Llamar */
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #e1ff00;
+  /* azul iOS */
+  display: ruby;
+  /* oculto por defecto */
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
 
-
-
+.imessage-float i {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  position: fixed;
+  bottom: 253px;
+  right: 40px;
+}
