@@ -29,7 +29,7 @@ html {
   margin: 0;
   padding: 0;
   background-color: #000000 !important ;
-} 
+}
 
 .container .img-nav {
   width: 60%;
@@ -210,7 +210,7 @@ html {
 
 .servicio-banner {
   position: relative;
-  height: 400px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,7 +227,11 @@ html {
 }
 
 #servicio-mid {
-  background-image: url("../img/img3.jpg");
+  background-image: url("../img/img3.png");
+  background-size: contain; /* o cover, dependiendo del efecto deseado */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000; /* fondo oscuro si la imagen no cubre todo */
 }
 
 #servicio1 {
@@ -281,6 +285,12 @@ html {
   .servicio-banner {
     height: auto;
     padding: 60px 20px;
+  }
+
+  #servicio-mid {
+    background-size: cover;
+    background-position: center;
+    height: 250px;
   }
 
   .titulo-s3 {
