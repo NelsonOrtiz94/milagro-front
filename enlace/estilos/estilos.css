@@ -250,6 +250,14 @@ html {
   background-color: #000; /* fondo oscuro si la imagen no cubre todo */
 }
 
+#servicio-mid-4 {
+  background-image: url("../img/img11.jpg");
+  background-size: contain; /* o cover, dependiendo del efecto deseado */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000; /* fondo oscuro si la imagen no cubre todo */
+}
+
 #servicio1 {
   background-image: url("../img/nn.jpg");
 }
@@ -316,6 +324,12 @@ html {
   }
 
   #servicio-mid-3 {
+    background-size: cover;
+    background-position: center;
+    height: 230px;
+  }
+
+  #servicio-mid-4 {
     background-size: cover;
     background-position: center;
     height: 230px;
